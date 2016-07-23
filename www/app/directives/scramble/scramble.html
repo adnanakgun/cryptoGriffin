@@ -2,13 +2,13 @@
 	<label for="plainText">Text you want to scramble:</label>
 	<textarea id="plainText" ng-model="plainText"></textarea>
 	<div class="align-box">
-		<button class="btn float-left" onclick="window.plugins.socialsharing.share(document.getElementById('txtEncodedContent').innerText())" ng-disabled="!encode()">Send Message</button>
+		<button class="btn float-left" ng-click="share()" ng-disabled="!encode()">Send Message</button>
 		<button class="btn float-right" ngclipboard data-clipboard-target="#txtEncoded" ng-disabled="!encode()">
 		    Copy scrambled text
 		</button>
 	</div>
 	<div id="txtEncoded">
-		<span id="txtEncodedContent" ng-bind="encode()"></span>
+		<span ng-bind="encode()"></span>
 		<span ng-show="!encode()">Scrambled text will appear here...</span>
 	</div>
 </section>

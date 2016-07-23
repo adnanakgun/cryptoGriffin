@@ -19,6 +19,10 @@
                 $scope.encode = function(){
                     return scrambleTool.encode($scope.plainText, $scope.model);
                 };
+
+                $scope.share = function(){
+                    window.plugins.socialsharing.share($scope.encode());
+                }
             }
         };
     }]);
