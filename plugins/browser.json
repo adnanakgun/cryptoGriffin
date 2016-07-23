@@ -1,0 +1,22 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "uk.co.netclipper.cryptoGriffin"
+        },
+        "cordova-admob": {
+            "PACKAGE_NAME": "uk.co.netclipper.cryptoGriffin"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-connectivity-monitor": {
+            "PACKAGE_NAME": "uk.co.netclipper.cryptoGriffin"
+        }
+    }
+}

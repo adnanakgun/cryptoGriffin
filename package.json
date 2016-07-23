@@ -1,0 +1,21 @@
+{
+  "name": "cryptoGriffin",
+  "version": "1.0.4",
+  "description": "> A cryptographical tool to scramble text messages.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adnanakgun/cryptoGriffin.git"
+  },
+  "author": "Adnan Akgun",
+  "license": "Apache-2.0.0",
+  "keywords": [
+    "ecosystem:phonegap",
+    "ecosystem:cordova",
+    "cordova:template",
+    "phonegap:template"
+  ],
+  "bugs": {
+    "url": "https://github.com/adnanakgun/cryptoGriffin/issues"
+  },
+  "homepage": "https://github.com/adnanakgun/cryptoGriffin"
+}

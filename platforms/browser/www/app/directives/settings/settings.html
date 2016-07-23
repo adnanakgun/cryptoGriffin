@@ -1,0 +1,11 @@
+<section ng-show="isSelected('settings')">
+	<label for="alpabetSelector">Select alphabet:</label>
+	<div class="align-box">
+		<select id="alpabetSelector" ng-options="a.label for a in model.alphabetData" ng-model="selectedAlphabet" ng-change="changeUserSettings()"></select>
+	</div>
+	<label for="keyText">Enter key:</label>
+	<textarea id="keyText" ng-model="keyText" ng-change="changeUserSettings()"></textarea>
+	<div class="align-box">
+		<button class="btn" ng-click="setDefaults()">Set to defaults</button>
+	</div>
+</section>

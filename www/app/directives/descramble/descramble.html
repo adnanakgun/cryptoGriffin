@@ -1,0 +1,8 @@
+<section ng-show="isSelected('descramble')">
+	<label for="encodedText">Text you want to descramble:</label>
+	<textarea id="encodedText" ng-model="encodedText"></textarea>
+	<div id="txtDecoded">	
+		<span ng-bind="decode()"></span>
+		<span ng-show="!decode()">Descrambled text will appear here...</span>	
+	</div>
+</section>

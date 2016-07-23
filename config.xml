@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="uk.co.netclipper.cryptoGriffin" version="1.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>cryptoGriffin</name>
+    <description>
+        A cryptographical tool to scramble text messages.
+    </description>
+    <author email="adnan.akgun@netclipper.co.uk" href="http://www.netclipper.co.uk">
+        Adnan Akgun - Netclippper IT Solutions
+    </author>
+    <content src="index.html" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="14" />
+    <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
+    <plugin name="phonegap-admob" source="npm"/>
+    <icon src="icon.png" />
+    <splash src="www/splash.png" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="FadeSplashScreen" value="false" />
+    <platform name="android">
+        <icon density="ldpi" src="www/res/icons/android/icon-36-ldpi.png" />
+        <icon density="mdpi" src="www/res/icons/android/icon-48-mdpi.png" />
+        <icon density="hdpi" src="www/res/icons/android/icon-72-hdpi.png" />
+        <icon density="xhdpi" src="www/res/icons/android/icon-96-xhdpi.png" />
+        <icon density="xxhdpi" src="www/res/icons/android/icon-144-xxhdpi.png" />
+        <icon density="xxxhdpi" src="www/res/icons/android/icon-192-xxxhdpi.png" />
+    </platform>
+    <platform name="ios">
+        <icon height="57" platform="ios" src="www/res/icons/ios/icon.png" width="57" />
+        <icon height="114" platform="ios" src="www/res/icons/ios/icon-2x.png" width="114" />
+        <icon height="40" platform="ios" src="www/res/icons/ios/icon-40.png" width="40" />
+        <icon height="80" platform="ios" src="www/res/icons/ios/icon-40-2x.png" width="80" />
+        <icon height="50" platform="ios" src="www/res/icons/ios/icon-50.png" width="50" />
+        <icon height="100" platform="ios" src="www/res/icons/ios/icon-50-2x.png" width="100" />
+        <icon height="60" platform="ios" src="www/res/icons/ios/icon-60.png" width="60" />
+        <icon height="120" platform="ios" src="www/res/icons/ios/icon-60-2x.png" width="120" />
+        <icon height="180" platform="ios" src="www/res/icons/ios/icon-60-3x.png" width="180" />
+        <icon height="72" platform="ios" src="www/res/icons/ios/icon-72.png" width="72" />
+        <icon height="144" platform="ios" src="www/res/icons/ios/icon-72-2x.png" width="144" />
+        <icon height="76" platform="ios" src="www/res/icons/ios/icon-76.png" width="76" />
+        <icon height="152" platform="ios" src="www/res/icons/ios/icon-76-2x.png" width="152" />
+        <icon height="29" platform="ios" src="www/res/icons/ios/icon-small.png" width="29" />
+        <icon height="58" platform="ios" src="www/res/icons/ios/icon-small-2x.png" width="58" />
+    </platform>
+    <platform name="wp8">
+        <icon height="99" platform="wp8" src="www/res/icons/wp8/ApplicationIcon.png" width="99" />
+        <icon height="159" platform="wp8" src="www/res/icons/wp8/Background.png" width="159" />
+    </platform>
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <engine name="android" spec="~5.1.1" />
+</widget>

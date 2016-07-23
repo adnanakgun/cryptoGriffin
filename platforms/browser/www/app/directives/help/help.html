@@ -1,0 +1,19 @@
+<section ng-show="isSelected()">
+	<div class="help">
+		<div class="help__box">
+			<a href="#" class="close-button" ng-click="close()">X</a>
+
+			<h1>About cryptoGriffin</h1>
+
+			<div class="help__content">
+				<p>cryptoGriffin is a text encryption tool inspired by the Enigma machine used during WWII. It uses a replacement cypher system that requires a key (a key sentence or key text to be precise) and the correct alphabet to be decrypted/descrambled. There are three levels of encryption, where each letter is replaced with another. Levels 2 and 3 also have a rotational system in place that helps to "scramble" each occurance of one letter to be a different cypher. E.g. in the default setting the word "letter" will appear as "uupjdi". Although the letters "e" and "t" appear twice, their replacement letters are different at each instance.</p>
+				<h2>Instructions</h2>
+				<p>If you want to use alphabet specific letters such as "ü", "ö" you need to have the correct alphabet selected. Otherwise those letters will be represented as they are. For example the German word "glück" will be scrambled as "zeüvv".</p> 
+				<p>The other important component is the key text. You should enter a sentence that covers as many as possible, ideally all, letters of your chosen alphabet. Together with the alphabet, the key text is used to encrypt the message you enter in the "scramble" tab. The recipient of the message should also be made aware of the key/alphabet combination.</p>
+				<p>An encrypted message is unlikely to be decrypted without another cryptoGriffin app (and indeed without the correct alphabet and key text setting) at the recepient's end, however it is not humanly impossible.</p>
+				<p></p>
+				<sub>&copy; 2016 Netclipper IT Solutions Ltd</sub>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,13 @@
+<section ng-show="isSelected('scramble')">
+	<label for="plainText">Text you want to scramble:</label>
+	<textarea id="plainText" ng-model="plainText"></textarea>
+	<div class="align-box">
+		<button class="btn" ngclipboard data-clipboard-target="#txtEncoded" ng-disabled="!encode()">
+		    Copy scrambled text
+		</button>
+	</div>
+	<div id="txtEncoded">
+		<span ng-bind="encode()"></span>
+		<span ng-show="!encode()">Scrambled text will appear here...</span>
+	</div>
+</section>
