@@ -19,6 +19,10 @@
                         {
                             "xml": "<feature name=\"AdMobAds\"><param name=\"android-package\" value=\"com.appfeel.cordova.admob.AdMobAds\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SocialSharing\"><param name=\"android-package\" value=\"nl.xservices.plugins.SocialSharing\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -39,6 +43,10 @@
                         {
                             "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
                             "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -53,6 +61,9 @@
             "PACKAGE_NAME": "uk.co.netclipper.cryptoGriffin"
         },
         "cordova-admob": {
+            "PACKAGE_NAME": "uk.co.netclipper.cryptoGriffin"
+        },
+        "cordova-plugin-x-socialsharing": {
             "PACKAGE_NAME": "uk.co.netclipper.cryptoGriffin"
         }
     },
@@ -79,11 +90,19 @@
                 "window.admob",
                 "window.tappx"
             ]
+        },
+        {
+            "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
+            "id": "cordova-plugin-x-socialsharing.SocialSharing",
+            "clobbers": [
+                "window.plugins.socialsharing"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-splashscreen": "3.2.2",
         "cordova-connectivity-monitor": "1.2.2",
-        "cordova-admob": "4.1.11"
+        "cordova-admob": "4.1.11",
+        "cordova-plugin-x-socialsharing": "5.1.1"
     }
 }

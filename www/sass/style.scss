@@ -216,9 +216,23 @@ html {
 
     .align-box {
       text-align: right;
+      clear: both;
+      display: inline-block;
+      width: 100%;
      
       #alpabetSelector {
         width: 100%;
+      }
+    }
+
+    .float {
+
+      &-right {
+        float: right;
+      }
+
+      &-left {
+        float: left;
       }
     }
   }

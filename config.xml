@@ -12,6 +12,7 @@
     <preference name="android-minSdkVersion" value="14" />
     <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
     <plugin name="phonegap-admob" source="npm"/>
+    <gap:plugin name="nl.x-services.plugins.socialsharing" version="5.1.12" />
     <icon src="icon.png" />
     <splash src="www/splash.png" />
     <preference name="SplashScreenDelay" value="3000" />
