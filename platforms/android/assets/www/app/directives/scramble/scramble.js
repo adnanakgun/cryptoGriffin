@@ -21,7 +21,7 @@
                 };
 
                 $scope.share = function(){
-                    window.plugins.socialsharing.share($scope.encode());
+                    window.plugins.socialsharing.share('cryptoGriffin: ' + $scope.encode());
                 }
             }
         };
