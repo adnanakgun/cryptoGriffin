@@ -97,7 +97,7 @@
                     for(var i=0; i<txt.length; i++){
                         var integer = key2.indexOf(txt.charAt(i));
                         if(integer > -1){
-                            txt2 += key3[(integer - i + key2.length) % key3.length]; 
+                            txt2 += key3[(integer - (i % key3.length) + key3.length) % key3.length]; 
                         }else{
                             txt2 += txt.charAt(i);
                         }
@@ -106,7 +106,7 @@
                     for(var i=0; i<txt2.length; i++){
                         var integer = key1.indexOf(txt2.charAt(i));
                         if(integer > -1){
-                            txt3 += key2[(integer - i + key2.length) % key2.length]; 
+                            txt3 += key2[(integer - (i % key3.length) + key2.length) % key2.length]; 
                         }else{
                             txt3 += txt2.charAt(i);
                         }
